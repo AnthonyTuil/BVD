@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9286EABD18BE4F8A004DE21A /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9286EABC18BE4F8A004DE21A /* ConfigViewController.m */; };
+		9286EAC018BE4FA2004DE21A /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9286EABF18BE4FA2004DE21A /* TrackViewController.m */; };
+		9286EAC218BE518D004DE21A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9286EAC118BE518D004DE21A /* CoreBluetooth.framework */; };
+		9286EAC418BE5193004DE21A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9286EAC318BE5193004DE21A /* CoreLocation.framework */; };
 		92BB3BA718BC123B0012AEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BB3BA618BC123B0012AEBD /* Foundation.framework */; };
 		92BB3BA918BC123B0012AEBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BB3BA818BC123B0012AEBD /* CoreGraphics.framework */; };
 		92BB3BAB18BC123B0012AEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BB3BAA18BC123B0012AEBD /* UIKit.framework */; };
@@ -33,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9286EABB18BE4F8A004DE21A /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		9286EABC18BE4F8A004DE21A /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		9286EABE18BE4FA2004DE21A /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewController.h; sourceTree = "<group>"; };
+		9286EABF18BE4FA2004DE21A /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewController.m; sourceTree = "<group>"; };
+		9286EAC118BE518D004DE21A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9286EAC318BE5193004DE21A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		92BB3BA318BC123B0012AEBD /* BVD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BVD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BB3BA618BC123B0012AEBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		92BB3BA818BC123B0012AEBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9286EAC418BE5193004DE21A /* CoreLocation.framework in Frameworks */,
+				9286EAC218BE518D004DE21A /* CoreBluetooth.framework in Frameworks */,
 				92BB3BA918BC123B0012AEBD /* CoreGraphics.framework in Frameworks */,
 				92BB3BAB18BC123B0012AEBD /* UIKit.framework in Frameworks */,
 				92BB3BA718BC123B0012AEBD /* Foundation.framework in Frameworks */,
@@ -99,6 +111,8 @@
 		92BB3BA518BC123B0012AEBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9286EAC318BE5193004DE21A /* CoreLocation.framework */,
+				9286EAC118BE518D004DE21A /* CoreBluetooth.framework */,
 				92BB3BA618BC123B0012AEBD /* Foundation.framework */,
 				92BB3BA818BC123B0012AEBD /* CoreGraphics.framework */,
 				92BB3BAA18BC123B0012AEBD /* UIKit.framework */,
@@ -114,6 +128,10 @@
 				92BB3BB618BC123B0012AEBD /* AppDelegate.m */,
 				92BB3BD518BC12BB0012AEBD /* ViewController.h */,
 				92BB3BD618BC12BB0012AEBD /* ViewController.m */,
+				9286EABE18BE4FA2004DE21A /* TrackViewController.h */,
+				9286EABF18BE4FA2004DE21A /* TrackViewController.m */,
+				9286EABB18BE4F8A004DE21A /* ConfigViewController.h */,
+				9286EABC18BE4F8A004DE21A /* ConfigViewController.m */,
 				92BB3BB818BC123B0012AEBD /* Images.xcassets */,
 				92BB3BAD18BC123B0012AEBD /* Supporting Files */,
 			);
@@ -244,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9286EAC018BE4FA2004DE21A /* TrackViewController.m in Sources */,
 				92BB3BD718BC12BB0012AEBD /* ViewController.m in Sources */,
 				92BB3BB718BC123B0012AEBD /* AppDelegate.m in Sources */,
+				9286EABD18BE4F8A004DE21A /* ConfigViewController.m in Sources */,
 				92BB3BB318BC123B0012AEBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +467,7 @@
 				92BB3BD118BC123B0012AEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92BB3BD218BC123B0012AEBD /* Build configuration list for PBXNativeTarget "BVDTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +476,7 @@
 				92BB3BD418BC123B0012AEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

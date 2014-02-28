@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+#import "ConfigViewController.h"
+#import "TrackViewController.h"
 
 @interface ViewController : UIViewController{
     UIButton *trackButton;
     UIButton *emitButton;
+    ConfigViewController *configVC;
+    TrackViewController *trackVC;
 }
 
 @end
